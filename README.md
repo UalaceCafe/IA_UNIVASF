@@ -6,5 +6,5 @@ Este projeto contém atividades extras desenvolvidas na disciplina de Inteligên
 
 ## Atividades
 
-* [atv1_8_puzzle](atv1_8_puzzle) - Implementação dos algoritmos em busca e em profundidade para a solução do problema do quebra-cabeça de 8 peças.
+* [atv1_8_puzzle](atv1_8_puzzle) - Implementação dos algoritmos de busca em largura e busca em profundidade para a solução do problema do quebra-cabeça de 8 peças.
 
