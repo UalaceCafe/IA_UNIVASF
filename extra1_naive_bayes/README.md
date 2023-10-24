@@ -28,7 +28,7 @@ A base de dados é composta por 14 amostras, cada uma com 4 variáveis aleatóri
 Por estarmos lidando com uma quantidade pequena de dados, optei por definir a base de dados diretamente no código-fonte, ao invés de ler de um arquivo externo.
 
 ```cpp
-std::array<const std::array<std::string, 5>, 14> training_data = {{
+const std::array<const std::array<std::string, 5>, 14> training_data = {{
     {{ "Sunny", "Hot", "High", "Weak", "No" }},
     {{ "Sunny", "Hot", "High", "Strong", "No" }},
     {{ "Overcast", "Hot", "High", "Weak", "Yes" }},
