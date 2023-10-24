@@ -5,8 +5,8 @@
 int main(void) {
     const std::array<const std::string, 4> input = { "Sunny", "Cool", "High", "Strong" };
 
-    double yes_prob = Stats::probability_class(std::string("Yes"));
-    double no_prob = Stats::probability_class(std::string("No"));
+    double yes_prob = Stats::probability_class("Yes");
+    double no_prob = Stats::probability_class("No");
 
     std::cout << "\n\"Should I play tennis?\"" << '\n';
     std::cout << "----" << '\n';
@@ -14,15 +14,15 @@ int main(void) {
     std::cout << "P(No) = " << no_prob << '\n';
     std::cout << "----" << '\n';
 
-    double yes_prob_outlook = Stats::probability_var_given_class(OUTLOOK, input[OUTLOOK], std::string("Yes"));
-    double yes_prob_temperature = Stats::probability_var_given_class(TEMPERATURE, input[TEMPERATURE], std::string("Yes"));
-    double yes_prob_humidity = Stats::probability_var_given_class(HUMIDITY, input[HUMIDITY], std::string("Yes"));
-    double yes_prob_wind = Stats::probability_var_given_class(WIND, input[WIND], std::string("Yes"));
+    double yes_prob_outlook = Stats::probability_var_given_class(OUTLOOK, input[OUTLOOK], "Yes");
+    double yes_prob_temperature = Stats::probability_var_given_class(TEMPERATURE, input[TEMPERATURE], "Yes");
+    double yes_prob_humidity = Stats::probability_var_given_class(HUMIDITY, input[HUMIDITY], "Yes");
+    double yes_prob_wind = Stats::probability_var_given_class(WIND, input[WIND], "Yes");
 
-    double no_prob_outlook = Stats::probability_var_given_class(OUTLOOK, input[OUTLOOK], std::string("No"));
-    double no_prob_temperature = Stats::probability_var_given_class(TEMPERATURE, input[TEMPERATURE], std::string("No"));
-    double no_prob_humidity = Stats::probability_var_given_class(HUMIDITY, input[HUMIDITY], std::string("No"));
-    double no_prob_wind = Stats::probability_var_given_class(WIND, input[WIND], std::string("No"));
+    double no_prob_outlook = Stats::probability_var_given_class(OUTLOOK, input[OUTLOOK], "No");
+    double no_prob_temperature = Stats::probability_var_given_class(TEMPERATURE, input[TEMPERATURE], "No");
+    double no_prob_humidity = Stats::probability_var_given_class(HUMIDITY, input[HUMIDITY], "No");
+    double no_prob_wind = Stats::probability_var_given_class(WIND, input[WIND], "No");
 
     double yes_prob_input = yes_prob_outlook * yes_prob_temperature * yes_prob_humidity * yes_prob_wind * yes_prob;
     double no_prob_input = no_prob_outlook * no_prob_temperature * no_prob_humidity * no_prob_wind * no_prob;
