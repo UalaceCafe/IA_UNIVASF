@@ -3,7 +3,7 @@
 #include "../include/genetic.h"
 
 Individual ** select_parents(Individual ** population, uint8_t population_size) {
-	Individual ** parents = malloc(sizeof(Individual *) * 2);
+	Individual ** parents = malloc(sizeof(Individual *) * PARENTS_SIZE);
 
 	uint8_t * indices = malloc(sizeof(uint8_t) * population_size);
 	for(uint8_t i = 0; i < population_size; i++) {

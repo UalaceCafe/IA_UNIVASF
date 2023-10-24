@@ -39,7 +39,7 @@ int main(void) {
 
 		mutate(population, POPULATION_SIZE);
 
-		printf("#=================================================================#\n");
+		printf("-+----------------------------------------------------------------+\n");
 	}
 
 	free_population(parents, PARENTS_SIZE);
