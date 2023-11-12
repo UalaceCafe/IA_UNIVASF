@@ -11,3 +11,5 @@ Este projeto contém atividades e códigos extras desenvolvidos na disciplina de
 * [atv2_genetic_algorithm](atv2_genetic_algorithm) - Implementação em _C_ de um algoritmo genético para a solução do problema da minimização local de uma função.
 
 * [extra1_naive_bayes](extra1_naive_bayes) - Implementação em _C++_ do algoritmo de classificação Naïve Bayes para decisão simples com duas classes.
+
+* [extra2_neulral_network](extra2_neural_network) - Implementação em _C_ de uma rede neural para representação das portas lógicas AND e OR.
