@@ -60,4 +60,6 @@ Com a ferramenta `make`
 Caso não possua a ferramenta `make`, execute o comando
 > `gcc -Wall -pedantic -O2 -std=c2x -Werror src/main.c src/ann.c`
 
-Em qualquer um dos casos, o binário será gerado no diretório [`bin`](bin/). Novamente, para executar o programa é necessário passar o argumento `GATE` com a porta lógica desejada (_and_ ou _or_).
+Em qualquer um dos casos, o binário será gerado no diretório [`bin`](bin/). Para executá-lo manualmente é necessário passar como argumento a porta lógica desejada (_and_ ou _or_). Por exemplo,
+
+> .\bin\main and
