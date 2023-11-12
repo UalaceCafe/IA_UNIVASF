@@ -33,9 +33,11 @@ uint16_t train_network(Network_s* network) {
 			double diff = network->expected_output - network->actual_output;
 			diff_sum += diff * diff;
 
-			network->weights[0] += diff * network->inputs[0] * network->learning_rate;
-			network->weights[1] += diff * network->inputs[1] * network->learning_rate;
-			network->bias -= diff * network->learning_rate;
+			if (diff != 0.0) {
+				network->weights[0] += diff * network->inputs[0] * network->learning_rate;
+				network->weights[1] += diff * network->inputs[1] * network->learning_rate;
+				network->bias -= diff * network->learning_rate;
+			}
 
 			printf("Iteration %d:\n", i + 1);
 			puts("------------");
